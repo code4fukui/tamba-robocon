@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>ARロボ</title>
+<script type="module">
+import * as eg from "https://js.sabae.cc/egvr.js";
+
+//const img = eg.image("./matzbagani2024.png", 0, 0, -1.8, 3.6, 3.6);
+//img.setAttribute("rotation", { x: -90, y: 0, z: 0});
+
+const fns = [
+  "./tamba-gencraw-1.glb",
+  "./tamba-military_robo.glb"
+];
+
+const r1 = eg.model(fns[0], 1.5, 0, -2.5, 0, 8);
+const r2 = eg.model(fns[1], -1.5, 0, -2.5, 0, 8);
+
+const m1 = eg.model(fns[0], 1.0, 0, -0.2, 0, 1);
+const m2 = eg.model(fns[1], -1.0, 0, -0.2, 0, 1);
+
+</script>
